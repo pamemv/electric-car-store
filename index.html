@@ -4,17 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/92a36300ab.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Electric Car Store</title>
   </head>
   <body>
     <div class="grid-container">
       <nav>
-        <span class="mdi mdi-car-electric"></span>
-        Electric Cars
+        <div class="sidebar-title">
+          <img src="./assets/img/car-electric.svg" />
+          Electric Cars
+        </div>
       </nav>
 
       <menu>Filtro </menu>
@@ -134,10 +142,18 @@
           </div>
         </div>
         <div class="pagination">
-          <!-- agregar paginado -->
+          <div class="item-pagination">«</div>
+          <div class="item-pagination">1</div>
+          <div class="item-pagination">2</div>
+          <div class="item-pagination">3</div>
+          <div class="item-pagination">»</div>
         </div>
       </main>
-      <footer>Footer</footer>
+      <footer>
+        <i class="fa-brands fa-facebook fa-2x" style="color: #ffffff"></i>
+        <i class="fa-brands fa-instagram fa-2x" style="color: #ffffff"></i>
+        <div>Todos los derechos reservados</div>
+      </footer>
     </div>
   </body>
 </html>
