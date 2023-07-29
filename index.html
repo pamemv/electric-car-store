@@ -19,13 +19,32 @@
   <body>
     <div class="grid-container">
       <nav>
-        <div class="sidebar-title">
-          <img src="./assets/img/car-electric.svg" />
-          Electric Cars
+        <div class="sidebar-header">
+          <div class="name-brand">
+            <img src="./assets/img/car-electric.svg" />
+            Electric Cars
+          </div>
+          <div class="icon-bars">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+        <div class="container-menu">
+          <div class="item-menu">Inicio</div>
+          <div class="item-menu">Catálogo</div>
+          <div class="item-menu">Ofertas</div>
+          <div class="item-menu">Contacto</div>
         </div>
       </nav>
 
-      <menu>Filtro </menu>
+      <menu>
+        <div class="container-filter">
+          <label for="cars-select"><strong>Ordenar Por:</strong></label>
+          <select class="filter-cars">
+            <option value="precio">Precio</option>
+            <option value="modelo">Modelo</option>
+          </select>
+        </div>
+      </menu>
 
       <main>
         <div class="grid-container-card">
@@ -150,9 +169,13 @@
         </div>
       </main>
       <footer>
-        <i class="fa-brands fa-facebook fa-2x" style="color: #ffffff"></i>
-        <i class="fa-brands fa-instagram fa-2x" style="color: #ffffff"></i>
-        <div>Todos los derechos reservados</div>
+        <div class="icon-footer">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="text-footer">
+          <strong>Todos los derechos reservados</strong>
+        </div>
       </footer>
     </div>
   </body>

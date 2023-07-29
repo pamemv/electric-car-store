@@ -24,9 +24,14 @@ nav {
   font-size: 20px;
 }
 
-.sidebar-title {
+.sidebar-header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.name-brand {
+  display: flex;
   align-items: center;
   gap: 10px;
 }
@@ -49,13 +54,51 @@ footer {
   grid-area: footer;
   background-color: #00215c;
   color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+}
+
+.icon-footer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1.5em;
+  color: white;
+}
+
+.text-footer {
+  text-align: center;
+}
+
+.container-filter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  gap: 5px;
+}
+
+.filter-cars {
+  width: 100%;
+  background-color: white;
+  height: 40px;
+  border: 1px solid rgb(210, 210, 210);
+  border-radius: 4px;
+  padding-left: 1em;
+  padding: 5px;
+}
+
+.container-menu {
+  display: none;
 }
 
 /*diseño cards*/
-
 .grid-container-card {
   padding: 20px 30px;
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 15px 30px;
@@ -67,11 +110,13 @@ footer {
   flex-basis: 20%;
   flex-grow: 1;
   align-items: center;
-  gap: 20px;
   border-radius: 4px grey;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
+.img {
+  padding: 20px 20px 0px 20px;
+}
 .footer-card {
   display: flex;
   flex-direction: column;
@@ -122,10 +167,36 @@ footer {
       "nav galery"
       "footer galery";
     grid-template-rows: 1fr 10fr;
-    grid-template-columns: 2fr 8fr;
+    grid-template-columns: 1.5fr 8fr;
+  }
+
+  .grid-container-card {
+    flex-direction: row;
+  }
+
+  .sidebar-header {
+    justify-content: center;
+    align-items: center;
   }
 
   footer {
-    padding: 30px;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .icon-footer {
+    font-size: 2em;
+  }
+
+  .container-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 20px;
+  }
+
+  .icon-bars {
+    display: none;
   }
 }
